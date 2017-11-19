@@ -26,7 +26,7 @@ class App extends Component {
 
     return (
       <div className="App">
-        <h2>Dog React</h2>
+        <h2>Dogs React</h2>
         <BreedSelector value={breed} onChange={this.handleChange} />
         <div>
           You are viewing images for <span className="breed">{breed}</span>
