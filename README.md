@@ -1,0 +1,1 @@
+React app consuming the [Dog API](https://dog.ceo/dog-api/)
