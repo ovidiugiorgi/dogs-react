@@ -15,13 +15,19 @@ class DogViewer extends Component {
   }
 
   componentDidMount() {
-    this.getRandomImage();
+    this.getRandomImage(this.props.breed);
   }
 
-  cmpo
+  componentWillReceiveProps(nextProps) {
+    const { breed } = nextProps;
 
-  getRandomImage() {
-    fetch(`https://dog.ceo/api/breed/${this.props.breed}/images/random`)
+    if (breed !== this.props.breed) {
+      this.getRandomImage(breed);
+    }
+  }
+
+  getRandomImage(breed) {
+    fetch(`https://dog.ceo/api/breed/${breed}/images/random`)
     .then(res => res.json())
     .then(result =>
       this.setState({
@@ -38,7 +44,7 @@ class DogViewer extends Component {
   }
 
   handleClick(event) {
-    this.getRandomImage();
+    this.getRandomImage(this.props.breed);
   }
 
   render() {
