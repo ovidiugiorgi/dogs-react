@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import './App.css';
 
 import BreedSelector from '../BreedSelector';
-import DogViewer from '../DogViewer';
+import BreedViewer from '../BreedViewer';
 
 class App extends Component {
   constructor() {
@@ -31,9 +31,9 @@ class App extends Component {
         <div>
           You are viewing images for <span className="breed">{breed}</span>
         </div>
-        <DogViewer breed={breed} />
+        <BreedViewer breed={breed} />
         <div className="footer">
-          <a href="https://dog.ceo/dog-api/">Please check out the Dog API</a>
+          <a href="https://dog.ceo/dog-api/">Check out the Dog API</a>
         </div>
       </div>
     );

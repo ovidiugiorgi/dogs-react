@@ -1,12 +1,12 @@
-.DogViewer {
+.BreedViewer {
   padding: 10px 0 10px 0;
 }
 
-.DogViewer .img {
+.BreedViewer .img {
   margin-top: 5px;
 }
 
-.DogViewer button {
+.BreedViewer button {
   display: block;
   cursor: pointer;
   font-size: initial;

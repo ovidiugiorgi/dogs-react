@@ -1,7 +1,7 @@
 import React, { Component} from 'react';
-import './DogViewer.css';
+import './BreedViewer.css';
 
-class DogViewer extends Component {
+class BreedViewer extends Component {
   constructor({ breed }) {
     super();
 
@@ -56,7 +56,7 @@ class DogViewer extends Component {
       return <div>Loading ...</div>
     } else {
       return (
-        <div className="DogViewer">
+        <div className="BreedViewer">
           <img src={imgUrl} alt="Good boy"/>
           <button onClick={this.handleClick}>Show more from this breed</button>
         </div>
@@ -65,4 +65,4 @@ class DogViewer extends Component {
   }
 }
 
-export default DogViewer;
+export default BreedViewer;
