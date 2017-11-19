@@ -1,0 +1,17 @@
+.DogViewer {
+  padding: 10px 0 10px 0;
+}
+
+.DogViewer .img {
+  margin-top: 5px;
+}
+
+.DogViewer button {
+  display: block;
+  cursor: pointer;
+  font-size: initial;
+  margin-top: 5px;
+  background-color: lightcyan;
+  border: 1px solid #001f1f;
+  font-family: Courier New, Courier, monospace;
+}

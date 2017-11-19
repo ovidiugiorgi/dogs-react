@@ -1,6 +1,6 @@
 {
-  "short_name": "React App",
-  "name": "Create React App Sample",
+  "short_name": "Dog React",
+  "name": "React app consuming the Dog API",
   "icons": [
     {
       "src": "favicon.ico",
